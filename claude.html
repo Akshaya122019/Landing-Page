@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenLab IB - Innovative Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Clash Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Clash Display', sans-serif;
+            background-color: #101010;
+            color: #F0F0F0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .hero {
+            height: 100vh;
+            background: url('https://via.placeholder.com/1920x1080/101010/BCF000?text=GenLab+IB+Hero') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(16, 16, 16, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            z-index: 2;
+            color: #F0F0F0;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .btn-accent {
+            background-color: #BCF000;
+            color: #101010;
+            border: none;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        .btn-accent:hover {
+            background-color: #F0F0F0;
+            color: #101010;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parallax-1 {
+            background-image: url('https://via.placeholder.com/1920x1080/101010/BCF000?text=Parallax+1');
+        }
+        .parallax-2 {
+            background-image: url('https://via.placeholder.com/1920x1080/101010/BCF000?text=Parallax+2');
+        }
+        .hover-expand {
+            transition: transform 0.3s ease;
+        }
+        .hover-expand:hover {
+            transform: scale(1.1);
+        }
+        .horizontal-scroll {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 2rem 0;
+            background-color: #F0F0F0;
+            color: #101010;
+        }
+        .horizontal-scroll .card {
+            display: inline-block;
+            width: 300px;
+            margin-right: 2rem;
+            background-color: #101010;
+            color: #F0F0F0;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .horizontal-scroll .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .horizontal-scroll .card-body {
+            padding: 1rem;
+        }
+        .footer {
+            background-color: #101010;
+            color: #F0F0F0;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .section {
+            padding: 5rem 0;
+        }
+        .text-accent {
+            color: #BCF000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">GenLab IB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>GenLab IB</h1>
+            <p>Innovative Solutions for the Future</p>
+            <button class="btn btn-accent">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Parallax Section 1 -->
+    <section class="parallax parallax-1">
+        <div class="container text-center">
+            <h2 class="text-accent">Our Mission</h2>
+            <p>Delivering cutting-edge technology and research to drive innovation.</p>
+        </div>
+    </section>
+
+    <!-- Services Section with Hover Expand -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card hover-expand">
+                        <img src="https://via.placeholder.com/300x200/BCF000/101010?text=Service+1" class="card-img-top" alt="Service 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Research & Development</h5>
+                            <p class="card-text">Advanced R&D for groundbreaking solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card hover-expand">
+                        <img src="https://via.placeholder.com/300x200/BCF000/101010?text=Service+2" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Consulting</h5>
+                            <p class="card-text">Expert advice to optimize your operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card hover-expand">
+                        <img src="https://via.placeholder.com/300x200/BCF000/101010?text=Service+3" class="card-img-top" alt="Service 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Innovation Labs</h5>
+                            <p class="card-text">State-of-the-art labs for experimentation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Scroll Section -->
+    <section class="horizontal-scroll">
+        <div class="container-fluid">
+            <h2 class="text-center mb-4">Our Projects</h2>
+            <div class="d-flex">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200/101010/BCF000?text=Project+1" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Alpha</h5>
+                        <p class="card-text">Revolutionary tech project.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200/101010/BCF000?text=Project+2" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Beta</h5>
+                        <p class="card-text">Sustainable energy solution.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200/101010/BCF000?text=Project+3" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Gamma</h5>
+                        <p class="card-text">AI-driven analytics.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200/101010/BCF000?text=Project+4" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Delta</h5>
+                        <p class="card-text">Biotech innovations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section 2 -->
+    <section class="parallax parallax-2">
+        <div class="container text-center">
+            <h2 class="text-accent">Why Choose Us?</h2>
+            <p>Expertise, innovation, and dedication to excellence.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About GenLab IB</h2>
+                    <p>We are a leading innovation lab focused on pushing the boundaries of technology and science. Our team of experts works tirelessly to deliver solutions that matter.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500x300/BCF000/101010?text=About+Us" class="img-fluid" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>Get in touch for more information.</p>
+            <button class="btn btn-accent">Contact</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 GenLab IB. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS for Animations -->
+    <script>
+        // Parallax effect (simple implementation)
+        window.addEventListener('scroll', function() {
+            const parallaxElements = document.querySelectorAll('.parallax');
+            parallaxElements.forEach(el => {
+                let scrolled = window.pageYOffset;
+                let rate = scrolled * -0.5;
+                el.style.transform = 'translateY(' + rate + 'px)';
+            });
+        });
+
+        // Horizontal scroll smooth (optional enhancement)
+        const horizontalScroll = document.querySelector('.horizontal-scroll');
+        horizontalScroll.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            horizontalScroll.scrollLeft += e.deltaY;
+        });
+    </script>
+</body>
+</html>
