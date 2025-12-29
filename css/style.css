@@ -23,6 +23,10 @@ body {
     color: #000;
     margin: 0 .8rem;
   }
+  .nav-link:hover{
+    color: #BCF000;
+    font-weight: bold;
+  }
 
   .dropdown-toggle::after { display: none; }
 
@@ -59,8 +63,8 @@ body {
   }
 
   .custom-dropdown .dropdown-item:hover {
-    opacity: .6;
     background: none;
+    color: #BCF000;
   }
 }
 
