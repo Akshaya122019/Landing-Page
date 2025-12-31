@@ -2,101 +2,68 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>GenLab IB</title>
-<link href="images/image.png" rel="icon">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Gradient Hero</title>
 
-<!-- Bootstrap (DESKTOP ONLY) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&display=swap" rel="stylesheet"/>
+
+
 <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- ================= DESKTOP NAV ================= -->
-<div class="desktop-nav">
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="images/image.png" class="img-fluid" width="50"></a>
+<section class="hero">
 
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+    <!-- NAV -->
+    <div class="nav-group">
+        <div class="logo">
+            <img src="images/gen-logo.png" alt="logo">
+        </div>
 
-      <li class="nav-item dropdown hover-dropdown">
-        <a class="nav-link dropdown-toggle" href="#">Services</a>
-        <ul class="dropdown-menu custom-dropdown">
-          <li><a class="dropdown-item" href="#">AI</a></li>
-          <li><a class="dropdown-item" href="#">Branding</a></li>
-          <li><a class="dropdown-item" href="#">Websites & Digital Platforms</a></li>
-          <li><a class="dropdown-item" href="#">Immersive</a></li>
-        </ul>
-      </li>
-
-      <li class="nav-item"><a class="nav-link" href="#">Sectors</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
-    </ul>
-
-    <div class="d-flex align-items-center">
-      <a class="btn btn-project">Join With Us</a>
-      <a class="btn-arrow">↗</a>
-    </div>
-  </div>
-</nav>
-</div>
-
-<!-- ================= MOBILE BAR ================= -->
-<div class="mobile-navbar">
-  <div class="brand">
-    <img src="images/image.png" class="img-fluid" width="50">
-  </div>
-  <div class="menu-btn" onclick="openMenu()">
-    <div class="menu-pill">Menu</div>
-    <div class="menu-circle"></div>
-  </div>
-</div>
-
-<!-- ================= MOBILE OVERLAY ================= -->
-<div class="menu-overlay" id="menu">
-  <div class="menu-header">
-    <div><img src="images/image.png" class="img-fluid" width="50"></div>
-    <div class="menu-btn" onclick="closeMenu()">
-      <div class="close-pill">Close</div>
-      <div class="close-circle">✕</div>
-    </div>
-  </div>
-
-  <div class="menu-content">
-    <a href="#">Work</a>
-    <a href="#">About</a>
-
-    <!-- SERVICES SUB NAV -->
-    <div class="mobile-subnav">
-      <div class="mobile-subnav-title" onclick="toggleSubnav()">
-        Services <span id="subIcon">+</span>
-      </div>
-      <div class="mobile-subnav-links" id="subnav">
-        <a href="#">AI</a>
-        <a href="#">Branding</a>
-        <a href="#">Websites & Digital Platforms</a>
-        <a href="#">Immersive</a>
-      </div>
+        <nav class="glass-nav">
+            <a href="#">About</a>
+            <a href="#">Verticles</a>
+            <a href="#">Peoples</a>
+            <a href="#">Careers</a>
+            <a href="#" class="contact-btn">Contact us</a>
+        </nav>
     </div>
 
-    <a href="#">Sectors</a>
-    <a href="#">Insights</a>
-    <a href="#">Careers</a>
+    <!-- CONTENT -->
+    <div class="hero-content ">
+        <h1 class="display-3">
+            World's First Gen Z AI<br>
+            Creative Powerhouse
+        </h1>
 
-    <div class="menu-cta">
-      <div>Join with Us</div>
-      <div class="arrow">↗</div>
+        <button>
+            JOIN WITH US →
+        </button>
+    </div>
+
+</section>
+
+<section class="about text-black text-center p-5 my-0 my-lg-5">
+  <div class="container py-5 my-0 my-md-5">
+    <div class="abt-con py-5">
+      <p class="fs-5 fw-normal">OUR ETHOS</p>
+      <p class="fs-1 letter-space-2 ">We transform and create <b class="fw-medium">(IMPACTFUL)</b> brands & AI Solutions. With over <b class="fw-medium">(10+COMPANIES)</b> having already partnered with us to turn up their brand & achieve <b class="fw-medium">(GROWTH)</b></p>
+      <h3 class="display-5 fw-bold">From India To The World</h3>
     </div>
   </div>
-</div>
+</section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+<!-- Creativity -->
+<section class="creativity bg-black text-center text-white d-flex align-items-center justify-content-center min-vh-100 py-5">
+  <div class="container">
+    <div class="creativity-con py-5 mx-auto" style="max-width: 1200px;">
+      <p class="fs-5 fw-normal">OUR CREATIVITY</p>
+      <h1 class="main-title display-5 fw-light lh-base m-0" style="letter-spacing: -0.02em;">The world's sharpest view of<br>Gen Z creativity powered by our 3C engine.</h1>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
