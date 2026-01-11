@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#">Verticals</a>
                 <a class="nav-link" href="#">People</a>
                 <a class="nav-link" href="#">Careers</a>
-                <a class="nav-link contact-btn" href="#">Contact us</a>
+                <a class="nav-link join-btn" href="#">Contact us</a>
               </div>
             </div>
           </div>
@@ -61,9 +61,11 @@
         Creative Powerhouse
       </h1>
 
-      <button class="explore-btn">
-        JOIN WITH US →
+      <button class="btn join-btn d-inline-flex align-items-center gap-3">
+        <span class="join-text">JOIN WITH US</span>
+        <span class="join-arrow">→</span>
       </button>
+
     </div>
 
 
@@ -94,17 +96,32 @@
   </section>
 
   <!-- Glow -->
-  <section class="gloww">
-    <div class="glow-stage" id="glowStage">
-      <div class="glow-bg"></div>
+  <section class="aiSeq-wrapper">
+    <div id="aiSeq-bg"></div>
+    <section id="aiSeq-scroll">
 
-      <div class="card-box">
-        <div>
-          <h1 id="title"></h1>
-          <p id="desc"></p>
+      <div class="aiSeq-sticky">
+        <div class="aiSeq-card aiSeq-state-empty" id="aiSeq-card">
+
+          <div class="aiSeq-step" id="aiSeq-step-1">
+            <h2>Connect</h2>
+            <p>We decode your brand, audience and goals.</p>
+          </div>
+
+          <div class="aiSeq-step" id="aiSeq-step-2">
+            <h2>Create</h2>
+            <p>We turn strategy into visuals and automations.</p>
+          </div>
+
+          <div class="aiSeq-step" id="aiSeq-step-3">
+            <h2>Chat</h2>
+            <p>We collaborate in real time to shape ideas.</p>
+          </div>
+
         </div>
       </div>
-    </div>
+
+    </section>
   </section>
 
   <!-- Parallex -->
@@ -113,9 +130,10 @@
       <div class="row g-0">
 
         <div class="col-md-6 d-none d-md-block gt-sticky-col">
-          <img src="images/image1.webp" id="gt-img-1" class="gt-reveal-img gt-active">
-          <img src="images/image2.webp" id="gt-img-2" class="gt-reveal-img">
-          <img src="images/image3.webp" id="gt-img-3" class="gt-reveal-img">
+          <img src="images/parallex1.png" id="gt-img-1" class="gt-reveal-img gt-active">
+          <img src="images/parallex2.png" id="gt-img-2" class="gt-reveal-img">
+          <img src="images/parallax3.png" id="gt-img-3" class="gt-reveal-img">
+          <img src="images/parallax4.png" id="gt-img-4" class="gt-reveal-img">
         </div>
 
         <div class="col-md-6">
@@ -123,7 +141,7 @@
           <div class="gt-content-block" data-gt-trigger="gt-img-1">
             <div class="w-100">
               <div class="gt-mobile-thumb d-md-none">
-                <img src="images/image1.webp">
+                <img src="images/parallex1.png">
               </div>
               <span class="gt-label">OUR CAPABILITIES</span>
               <h2 class="display-4 fw-light mb-4">We’re a Gen Z team of strategists and AI builders.</h2>
@@ -141,7 +159,7 @@
           <div class="gt-content-block" data-gt-trigger="gt-img-2">
             <div class="w-100">
               <div class="gt-mobile-thumb d-md-none">
-                <img src="images/image2.webp">
+                <img src="images/parallex2.png">
               </div>
               <h2 class="display-4 fw-light mb-4">GenLab.Brand Studio</h2>
               <p class="lead gt-text-muted">Blending bold branding, smart automation and future-ready
@@ -156,14 +174,18 @@
                 <a href="#" class="gt-list-item"><span>06 Video & Animation</span> <span>→</span></a>
                 <a href="#" class="gt-list-item"><span>07 Content Production & 3D</span> <span>→</span></a>
                 <a href="#" class="gt-list-item"><span>08 Social Media Management</span> <span>→</span></a>
+                <button class="btn join-btn d-inline-flex align-items-center gap-3 mt-4">
+                  <span class="join-text">START WITH US</span>
+                  <span class="join-arrow">→</span>
+                </button>
               </div>
             </div>
           </div>
 
-         <div class="gt-content-block" data-gt-trigger="gt-img-3">
+          <div class="gt-content-block" data-gt-trigger="gt-img-3">
             <div class="w-100">
               <div class="gt-mobile-thumb d-md-none">
-                <img src="images/image3.webp">
+                <img src="images/parallax3.png">
               </div>
               <h2 class="display-4 fw-light mb-4">GenLab.AI Forge</h2>
 
@@ -175,6 +197,32 @@
                 <a href="#" class="gt-list-item"><span>05 Agentic AI Workflows</span> <span>→</span></a>
                 <a href="#" class="gt-list-item"><span>06 Data & integration Layer</span> <span>→</span></a>
                 <a href="#" class="gt-list-item"><span>07 AI Maintenance & Optimixation</span> <span>→</span></a>
+                <button class="btn join-btn d-inline-flex align-items-center gap-3 mt-4">
+                  <span class="join-text">START WITH US</span>
+                  <span class="join-arrow">→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gt-content-block" data-gt-trigger="gt-img-4">
+            <div class="w-100">
+              <div class="gt-mobile-thumb d-md-none">
+                <img src="images/parallax4.png">
+              </div>
+              <h2 class="display-4 fw-light mb-4">GenLab.Launchpad</h2>
+
+              <div class="gt-feature-list d-none d-md-block">
+                <a href="#" class="gt-list-item"><span>01 Upskilling Programs</span> <span>→</span></a>
+                <a href="#" class="gt-list-item"><span>02 Campus & Corporate Training</span> <span>→</span></a>
+                <a href="#" class="gt-list-item"><span>03 Innovation & Incubation Support</span> <span>→</span></a>
+                <a href="#" class="gt-list-item"><span>04 Hackathons & Build Sprints</span> <span>→</span></a>
+                <a href="#" class="gt-list-item"><span>05 Career & Portfolio Labs</span> <span>→</span></a>
+                <a href="#" class="gt-list-item"><span>06 Community & Events</span> <span>→</span></a>
+                <button class="btn join-btn d-inline-flex align-items-center gap-3 mt-4">
+                  <span class="join-text">START WITH US</span>
+                  <span class="join-arrow">→</span>
+                </button>
               </div>
             </div>
           </div>
@@ -185,206 +233,61 @@
   </div>
 
   <!-- Benefit head -->
-  <section class="head-wire">
-    <section class="benefit-section">
-      <div class="container">
-        <div class="row align-items-center">
+  <div class="head-wire">
+    <section id="benefits-scroll-section">
+      <div class="container benefits-sticky">
+        <div class="row w-100 align-items-center">
 
-          <div class="col-lg-6">
-            <div class="svg-container">
-              <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg">
-                <!-- Wireframe mesh lines -->
-                <g class="wireframe-line">
-                  <!-- Outer head contour (much wider) -->
-                  <path
-                    d="M 300 50 Q 390 50 450 110 Q 485 165 492 220 Q 496 275 492 320 Q 483 385 455 440 Q 415 495 355 535 Q 315 560 300 575 Q 285 560 245 535 Q 185 495 145 440 Q 117 385 108 320 Q 104 275 108 220 Q 115 165 150 110 Q 210 50 300 50" />
-
-                  <!-- Left ear (wider position) -->
-                  <path d="M 108 220 Q 75 220 55 242 Q 35 264 35 295 Q 35 326 55 348 Q 75 370 108 370" />
-                  <path d="M 92 244 Q 73 253 73 278 Q 73 303 92 312" />
-
-                  <!-- Right ear (wider position) -->
-                  <path d="M 492 220 Q 525 220 545 242 Q 565 264 565 295 Q 565 326 545 348 Q 525 370 492 370" />
-                  <path d="M 508 244 Q 527 253 527 278 Q 527 303 508 312" />
-
-                  <!-- Horizontal face divisions (much wider) -->
-                  <line x1="165" y1="110" x2="435" y2="110" />
-                  <line x1="145" y1="160" x2="455" y2="160" />
-                  <line x1="130" y1="210" x2="470" y2="210" />
-                  <line x1="120" y1="260" x2="480" y2="260" />
-                  <line x1="115" y1="310" x2="485" y2="310" />
-                  <line x1="120" y1="360" x2="480" y2="360" />
-                  <line x1="130" y1="410" x2="470" y2="410" />
-                  <line x1="150" y1="460" x2="450" y2="460" />
-                  <line x1="180" y1="510" x2="420" y2="510" />
-                  <line x1="220" y1="550" x2="380" y2="550" />
-
-                  <!-- Vertical center line -->
-                  <line x1="300" y1="50" x2="300" y2="575" />
-
-                  <!-- Left side verticals -->
-                  <line x1="195" y1="80" x2="155" y2="480" />
-                  <line x1="235" y1="100" x2="200" y2="520" />
-
-                  <!-- Right side verticals -->
-                  <line x1="405" y1="80" x2="445" y2="480" />
-                  <line x1="365" y1="100" x2="400" y2="520" />
-
-                  <!-- Diagonal cross patterns (much wider spread) -->
-                  <line x1="165" y1="160" x2="235" y2="235" />
-                  <line x1="435" y1="160" x2="365" y2="235" />
-                  <line x1="145" y1="220" x2="230" y2="300" />
-                  <line x1="455" y1="220" x2="370" y2="300" />
-                  <line x1="130" y1="280" x2="235" y2="360" />
-                  <line x1="470" y1="280" x2="365" y2="360" />
-                  <line x1="145" y1="345" x2="245" y2="425" />
-                  <line x1="455" y1="345" x2="355" y2="425" />
-                  <line x1="165" y1="405" x2="255" y2="485" />
-                  <line x1="435" y1="405" x2="345" y2="485" />
-                  <line x1="195" y1="465" x2="265" y2="530" />
-                  <line x1="405" y1="465" x2="335" y2="530" />
-
-                  <!-- Center cross lines -->
-                  <line x1="195" y1="130" x2="300" y2="210" />
-                  <line x1="405" y1="130" x2="300" y2="210" />
-                  <line x1="175" y1="250" x2="300" y2="330" />
-                  <line x1="425" y1="250" x2="300" y2="330" />
-                  <line x1="195" y1="385" x2="300" y2="470" />
-                  <line x1="405" y1="385" x2="300" y2="470" />
-
-                  <!-- Additional diagonal mesh -->
-                  <line x1="160" y1="180" x2="220" y2="240" />
-                  <line x1="440" y1="180" x2="380" y2="240" />
-                  <line x1="150" y1="260" x2="215" y2="325" />
-                  <line x1="450" y1="260" x2="385" y2="325" />
-                  <line x1="160" y1="340" x2="230" y2="410" />
-                  <line x1="440" y1="340" x2="370" y2="410" />
-
-                  <!-- Ear connection lines -->
-                  <line x1="108" y1="220" x2="92" y2="238" />
-                  <line x1="108" y1="295" x2="73" y2="295" />
-                  <line x1="108" y1="370" x2="92" y2="352" />
-                  <line x1="492" y1="220" x2="508" y2="238" />
-                  <line x1="492" y1="295" x2="527" y2="295" />
-                  <line x1="492" y1="370" x2="508" y2="352" />
-                </g>
-
-                <!-- Node dots -->
-                <circle class="face-node" cx="300" cy="50" r="4.5" />
-                <circle class="face-node" cx="240" cy="80" r="3.5" />
-                <circle class="face-node" cx="300" cy="75" r="3.5" />
-                <circle class="face-node" cx="360" cy="80" r="3.5" />
-
-                <circle class="face-node" cx="195" cy="110" r="3.5" />
-                <circle class="face-node" cx="260" cy="110" r="3.5" />
-                <circle class="face-node" cx="300" cy="110" r="4" />
-                <circle class="face-node" cx="340" cy="110" r="3.5" />
-                <circle class="face-node" cx="405" cy="110" r="3.5" />
-
-                <circle class="face-node" cx="175" cy="160" r="3.5" />
-                <circle class="face-node" cx="245" cy="160" r="3.5" />
-                <circle class="face-node" cx="300" cy="160" r="4" />
-                <circle class="face-node" cx="355" cy="160" r="3.5" />
-                <circle class="face-node" cx="425" cy="160" r="3.5" />
-
-                <circle class="face-node" cx="155" cy="210" r="3.5" />
-                <circle class="face-node" cx="230" cy="210" r="3.5" />
-                <circle class="face-node" cx="300" cy="210" r="4.5" />
-                <circle class="face-node" cx="370" cy="210" r="3.5" />
-                <circle class="face-node" cx="445" cy="210" r="3.5" />
-
-                <circle class="face-node" cx="140" cy="260" r="3.5" />
-                <circle class="face-node" cx="220" cy="260" r="3.5" />
-                <circle class="face-node" cx="300" cy="260" r="5" />
-                <circle class="face-node" cx="380" cy="260" r="3.5" />
-                <circle class="face-node" cx="460" cy="260" r="3.5" />
-
-                <circle class="face-node" cx="130" cy="310" r="3.5" />
-                <circle class="face-node" cx="220" cy="310" r="3.5" />
-                <circle class="face-node" cx="300" cy="310" r="5" />
-                <circle class="face-node" cx="380" cy="310" r="3.5" />
-                <circle class="face-node" cx="470" cy="310" r="3.5" />
-
-                <circle class="face-node" cx="145" cy="360" r="3.5" />
-                <circle class="face-node" cx="230" cy="360" r="3.5" />
-                <circle class="face-node" cx="300" cy="360" r="5" />
-                <circle class="face-node" cx="370" cy="360" r="3.5" />
-                <circle class="face-node" cx="455" cy="360" r="3.5" />
-
-                <circle class="face-node" cx="165" cy="410" r="3.5" />
-                <circle class="face-node" cx="245" cy="410" r="3.5" />
-                <circle class="face-node" cx="300" cy="410" r="5" />
-                <circle class="face-node" cx="355" cy="410" r="3.5" />
-                <circle class="face-node" cx="435" cy="410" r="3.5" />
-
-                <circle class="face-node" cx="190" cy="460" r="3.5" />
-                <circle class="face-node" cx="260" cy="460" r="3.5" />
-                <circle class="face-node" cx="300" cy="460" r="5" />
-                <circle class="face-node" cx="340" cy="460" r="3.5" />
-                <circle class="face-node" cx="410" cy="460" r="3.5" />
-
-                <circle class="face-node" cx="230" cy="510" r="3.5" />
-                <circle class="face-node" cx="275" cy="510" r="3.5" />
-                <circle class="face-node" cx="300" cy="510" r="5" />
-                <circle class="face-node" cx="325" cy="510" r="3.5" />
-                <circle class="face-node" cx="370" cy="510" r="3.5" />
-
-                <circle class="face-node" cx="255" cy="550" r="3.5" />
-                <circle class="face-node" cx="300" cy="560" r="4.5" />
-                <circle class="face-node" cx="345" cy="550" r="3.5" />
-
-                <circle class="face-node" cx="300" cy="575" r="5" />
-
-                <!-- Ear nodes -->
-                <circle class="face-node" cx="73" cy="253" r="3" />
-                <circle class="face-node" cx="55" cy="278" r="3" />
-                <circle class="face-node" cx="55" cy="312" r="3" />
-                <circle class="face-node" cx="73" cy="337" r="3" />
-
-                <circle class="face-node" cx="527" cy="253" r="3" />
-                <circle class="face-node" cx="545" cy="278" r="3" />
-                <circle class="face-node" cx="545" cy="312" r="3" />
-                <circle class="face-node" cx="527" cy="337" r="3" />
-
-
-
-                <!-- Active tracker line (starts at top, ends at starting position) -->
-                <line id="active-tracker" x1="300" y1="50" x2="300" y2="185" />
-
-                <!-- Interactive nodes (4 clickable dots) -->
-                <circle class="node-dot" cx="300" cy="260" r="7" onclick="changeContent(0)" />
-                <circle class="node-dot" cx="300" cy="360" r="7" onclick="changeContent(1)" />
-                <circle class="node-dot" cx="300" cy="460" r="7" onclick="changeContent(2)" />
-                <circle class="node-dot" cx="300" cy="560" r="7" onclick="changeContent(3)" />
-
-                <!-- Logo (starting at red circle position) -->
-                <g id="logo-thumb" transform="translate(300, 185)">
-                  <circle r="28" fill="#c5ff00" opacity="0.25" filter="drop-shadow(0 0 12px #c5ff00)" />
-                  <circle r="24" fill="#c5ff00" filter="drop-shadow(0 0 8px #c5ff00)" />
-                  <!-- Pixelated pattern -->
-                  <rect x="-7" y="-7" width="6" height="6" fill="#0d0d0d" />
-                  <rect x="1" y="-7" width="6" height="6" fill="#0d0d0d" />
-                  <rect x="-7" y="1" width="6" height="6" fill="#0d0d0d" />
-                  <rect x="1" y="1" width="6" height="6" fill="#0d0d0d" />
-                </g>
-              </svg>
+          <!-- LEFT -->
+          <div class="col-lg-5">
+            <div class="benefits-image-wrap">
+              <img src="images/head1.png" class="img-fluid h-100 benefits-image active">
+              <img src="images/head-2.png" class="img-fluid h-100 benefits-image">
+              <img src="images/head-3.png" class="img-fluid h-100 benefits-image">
+              <img src="images/head-4.png" class="img-fluid h-100 benefits-image">
+              <img src="images/head-5.png" class="img-fluid h-100 benefits-image">
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div id="benefit-content" class="content-box">
-              <div class="benefit-id" id="txt-id" style="color: #ffffff;">Our Benefits</div>
-              <h2 class="benefit-title" id="txt-title" style="font-size: 3rem;">Click any node to explore</h2>
-              <p class="benefit-desc" id="txt-desc">
-                Select one of the four interactive nodes on the wireframe to discover our key benefits and capabilities.
-              </p>
+          <!-- RIGHT -->
+          <div class="col-lg-7">
+            <div class="benefits-content-wrap d-flex align-items-center justify-content-center">
+
+              <div class="benefits-content active">
+                <h2 class="display-1 fw-bold">Our Core Benefits</h2>
+              </div>
+
+              <div class="benefits-content">
+                <div class="benefit-number">01</div>
+                <h2 class="benefit-title">Rapid Execution</h2>
+                <p class="benefit-desc">Automated systems deliver outcomes 10× faster.</p>
+              </div>
+
+              <div class="benefits-content">
+                <div class="benefit-number">02</div>
+                <h2 class="benefit-title">Viral Branding</h2>
+                <p class="benefit-desc">Gen Z storytelling designed for attention.</p>
+              </div>
+
+              <div class="benefits-content">
+                <div class="benefit-number">03</div>
+                <h2 class="benefit-title">Smart Automation</h2>
+                <p class="benefit-desc">AI agents working 24/7 without friction.</p>
+              </div>
+
+              <div class="benefits-content">
+                <div class="benefit-number">04</div>
+                <h2 class="benefit-title">Future Proofing</h2>
+                <p class="benefit-desc">Continuously evolving AI systems.</p>
+              </div>
+
             </div>
           </div>
 
         </div>
       </div>
     </section>
-  </section>
+  </div>
 
   <!-- Impacts -->
   <div class="container py-4">
@@ -441,7 +344,7 @@
 
   <!-- Circle -->
   <div class="container vh-100 d-flex justify-content-center align-items-center">
-    <img src="images/sphere.png" class="rotate-anticlockwise" alt="Rotating Sphere">
+    <img src="images/circle.png" class="rotate-anticlockwise" alt="Rotating Sphere">
   </div>
 
   <!-- Partners -->
@@ -496,214 +399,336 @@
   </div>
 
   <!-- Squad -->
-<section id="squad">
-  <div class="container">
-    <h2 class="text-justify mt-5">Meet My Squad</h2>
+  <section id="squad-section">
+    <div class="container">
+      <h2 class="mt-5">Meet My Squad</h2>
+    </div>
 
     <div class="squad-track">
       <div class="squad-card">
-        <img src="images/person1.avif" class="img-fluid mb-3">
-        <h3>John Doe</h3><p>Developer</p>
+        <img src="images/person1.avif">
+        <h3>John Doe</h3>
+        <p>Developer</p>
       </div>
+
       <div class="squad-card">
-        <img src="images/person2.jpeg" class="img-fluid mb-3">
-        <h3>Jane Smith</h3><p>Designer</p>
+        <img src="images/person2.jpeg">
+        <h3>Jane Smith</h3>
+        <p>Designer</p>
       </div>
+
       <div class="squad-card">
-        <img src="images/person3.webp" class="img-fluid mb-3">
-        <h3>Mike Ross</h3><p>Marketing</p>
+        <img src="images/person3.webp">
+        <h3>Mike Ross</h3>
+        <p>Marketing</p>
       </div>
+
       <div class="squad-card">
-        <img src="images/person4.avif" class="img-fluid mb-3">
-        <h3>Sarah Lee</h3><p>Manager</p>
+        <img src="images/person4.avif">
+        <h3>Sarah Lee</h3>
+        <p>Manager</p>
       </div>
+
       <div class="squad-card">
-        <img src="images/person5.jpeg" class="img-fluid mb-3">
-        <h3>Sarah Lee</h3><p>Manager</p>
+        <img src="images/person5.jpeg">
+        <h3>Alex Ray</h3>
+        <p>Engineer</p>
       </div>
+
       <div class="squad-card">
-        <img src="images/person6.jpg" class="img-fluid mb-3">
-        <h3>Sarah Lee</h3><p>Manager</p>
+        <img src="images/person6.jpg">
+        <h3>Chris Paul</h3>
+        <p>Growth</p>
       </div>
-     
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="section-paddings bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <p class="text-uppercase small fw-bold mb-3" style="letter-spacing: 3px;">Assistance</p>
-                    <h2 class="display-3 fw-normal">Quick<br><strong>Answers.</strong></h2>
-                </div>
-                
-                <div class="col-lg-7">
-                    <div class="accordion accordion-flush" id="faqBase">
-                        
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
-                                    How do we start a partnership?
-                                </button>
-                            </h2>
-                            <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqBase">
-                                <div class="accordion-body text-secondary fs-5">
-                                    Submit your project details via our enquiry form. Our strategy team reviews applications weekly to select partners for the upcoming AI cohort.
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
-                                    Do you handle custom AI deployments?
-                                </button>
-                            </h2>
-                            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqBase">
-                                <div class="accordion-body text-secondary fs-5">
-                                    Yes, we build proprietary AI models and automation workflows tailored specifically to your organization's unique dataset and goals.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
-                                    What industries do you specialize in?
-                                </button>
-                            </h2>
-                            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqBase">
-                                <div class="accordion-body text-secondary fs-5">
-                                    While we are industry-agnostic, we have deep expertise in Fintech, Creative Media, E-commerce, and EdTech, focusing on Gen Z consumer behavior.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
-                                    Is there a cost for the initial consultation?
-                                </button>
-                            </h2>
-                            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqBase">
-                                <div class="accordion-body text-secondary fs-5">
-                                    Our initial strategic discovery call is complimentary. We use this time to evaluate if our AI incubation model aligns with your business objectives.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5">
-                                    How do you ensure data privacy?
-                                </button>
-                            </h2>
-                            <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqBase">
-                                <div class="accordion-body text-secondary fs-5">
-                                    Security is our priority. We use enterprise-grade encrypted environments and strictly follow localized data protection laws (GDPR/CCPA) for all proprietary training.
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+  <section class="section-paddings bg-white p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <p class="text-uppercase small fw-bold mb-3" style="letter-spacing: 3px;">Assistance</p>
+          <h2 class="display-3 fw-normal">Quick<br><strong>Answers.</strong></h2>
         </div>
-    </section>
 
-    <section class="section-paddings border-top border-dark">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <h2 class="display-3 fw-bold mb-4">Launch an<br>Enquiry</h2>
-                    <p class="fs-5 text-secondary pe-lg-5">Drop your details to discuss how we can scale your vision using next-gen AI tools and talent.</p>
-                </div>
-                <div class="col-lg-6">
-                    <form>
-                        <input type="text" class="form-control enquiry-input mb-4" placeholder="FULL NAME / ORGANIZATION">
-                        <input type="email" class="form-control enquiry-input mb-4" placeholder="EMAIL ADDRESS">
-                        <textarea class="form-control enquiry-input mb-5" rows="3" placeholder="DESCRIBE YOUR VISION"></textarea>
-                        <button type="submit" class="btn btn-black">SEND ENQUIRY</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="col-lg-7">
+          <div class="accordion accordion-flush" id="faqBase">
 
-    <section class="cta-section text-center">
-        <div class="cta-bg-text">NEXT GEN</div>
-        <div class="container position-relative z-1">
-            <h2 class="display-1 fw-bold mb-5">Building the <br>future of AI.</h2>
-            <a href="#" class="btn btn-outline-light px-5 py-3 rounded-0 fw-bold tracking-widest">GET STARTED</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="mb-4" style="font-weight: 900; font-size: 1.8rem; letter-spacing: -1px;">Gen Lab</div>
-                    <p class="text-secondary small pe-lg-5 mb-4">
-                        The ultimate growth platform bridging the gap between Gen Z talent and Enterprise AI solutions.
-                    </p>
-                    <div class="d-flex gap-4">
-                        <a href="#" class="footer-link m-0">INSTAGRAM</a>
-                        <a href="#" class="footer-link m-0">LINKEDIN</a>
-                    </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                  How do we start a partnership?
+                </button>
+              </h2>
+              <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqBase">
+                <div class="accordion-body text-secondary fs-5">
+                  Submit your project details via our enquiry form. Our strategy team reviews applications weekly to
+                  select partners for the upcoming AI cohort.
                 </div>
-
-                <div class="col-md-4 col-lg-3">
-                    <h6 class="text-uppercase small fw-bold mb-4 opacity-50" style="letter-spacing: 2px;">Locations</h6>
-                    <div class="mb-4">
-                        <div class="location-title">Nagercoil</div>
-                        <p class="text-secondary small">121/C, Kottar-Parvathipuram Rd, Chetti Kulam,<br>Simon Nagar, Nagercoil, Tamil Nadu 629001</p>
-                    </div>
-                    <div>
-                        <div class="location-title">Hydrabad Studio</div>
-                        <p class="text-secondary small">12-14 abc High St<br>Hydrabad</p>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-2 col-lg-2">
-                    <h6 class="text-uppercase small fw-bold mb-4 opacity-50" style="letter-spacing: 2px;">Explore</h6>
-                    <a href="#" class="footer-link">Home</a>
-                    <a href="#" class="footer-link">Partners</a>
-                    <a href="#" class="footer-link">The Squad</a>
-                    <a href="#" class="footer-link">Insights</a>
-                </div>
-
-                <div class="col-6 col-md-2 col-lg-3">
-                    <h6 class="text-uppercase small fw-bold mb-4 opacity-50" style="letter-spacing: 2px;">Inquiries</h6>
-                    <p class="location-title mb-1">Email</p>
-                    <a href="mailto:hello@platform.ai" class="footer-link mb-3">info@genlabib.in</a>
-                    <p class="location-title mb-1">Phone</p>
-                    <a href="tel:+919994646733" class="footer-link">+91 99946 46733</a>
-                </div>
+              </div>
             </div>
 
-            <div class="mt-5 pt-5 border-top border-secondary d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <p class="small text-secondary mb-0">&copy; 2026 AI GROWTH PLATFORM. MADE FOR THE NEXT GEN.</p>
-                <div class="d-flex gap-4 mt-3 mt-md-0">
-                    <a href="#" class="footer-link m-0">PRIVACY POLICY</a>
-                    <a href="#" class="footer-link m-0">TERMS OF SERVICE</a>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                  Do you handle custom AI deployments?
+                </button>
+              </h2>
+              <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqBase">
+                <div class="accordion-body text-secondary fs-5">
+                  Yes, we build proprietary AI models and automation workflows tailored specifically to your
+                  organization's unique dataset and goals.
                 </div>
+              </div>
             </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+                  What industries do you specialize in?
+                </button>
+              </h2>
+              <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqBase">
+                <div class="accordion-body text-secondary fs-5">
+                  While we are industry-agnostic, we have deep expertise in Fintech, Creative Media, E-commerce, and
+                  EdTech, focusing on Gen Z consumer behavior.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
+                  Is there a cost for the initial consultation?
+                </button>
+              </h2>
+              <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqBase">
+                <div class="accordion-body text-secondary fs-5">
+                  Our initial strategic discovery call is complimentary. We use this time to evaluate if our AI
+                  incubation model aligns with your business objectives.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5">
+                  How do you ensure data privacy?
+                </button>
+              </h2>
+              <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqBase">
+                <div class="accordion-body text-secondary fs-5">
+                  Security is our priority. We use enterprise-grade encrypted environments and strictly follow localized
+                  data protection laws (GDPR/CCPA) for all proprietary training.
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-paddings border-top border-dark p-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h2 class="display-3 fw-bold mb-4">Launch an<br>Enquiry</h2>
+          <p class="fs-5 text-secondary pe-lg-5">Drop your details to discuss how we can scale your vision using
+            next-gen AI tools and talent.</p>
+        </div>
+        <div class="col-lg-6">
+          <form>
+            <input type="text" class="form-control enquiry-input mb-4" placeholder="FULL NAME / ORGANIZATION">
+            <input type="email" class="form-control enquiry-input mb-4" placeholder="EMAIL ADDRESS">
+            <textarea class="form-control enquiry-input mb-5" rows="3" placeholder="DESCRIBE YOUR VISION"></textarea>
+            <button type="submit" class="btn btn-black">SEND ENQUIRY</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section text-center">
+    <div class="cta-bg-text">NEXT GEN</div>
+    <div class="container position-relative z-1">
+      <h2 class="display-1 fw-bold mb-5">Building the <br>future of AI.</h2>
+      <a href="#" class="btn btn-outline-light px-5 py-3 rounded-0 fw-bold join-btn">GET STARTED</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="mb-4" style="font-weight: 900; font-size: 1.8rem; letter-spacing: -1px;">Gen Lab</div>
+          <p class="text-secondary small pe-lg-5 mb-4">
+            The ultimate growth platform bridging the gap between Gen Z talent and Enterprise AI solutions.
+          </p>
+          <div class="d-flex gap-4">
+            <a href="#" class="footer-link m-0">INSTAGRAM</a>
+            <a href="#" class="footer-link m-0">LINKEDIN</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <h6 class="text-uppercase small fw-bold mb-4 opacity-50" style="letter-spacing: 2px;">Locations</h6>
+          <div class="mb-4">
+            <div class="location-title">Nagercoil</div>
+            <p class="text-secondary small">121/C, Kottar-Parvathipuram Rd, Chetti Kulam,<br>Simon Nagar, Nagercoil,
+              Tamil Nadu 629001</p>
+          </div>
+          <div>
+            <div class="location-title">Hydrabad Studio</div>
+            <p class="text-secondary small">12-14 abc High St<br>Hydrabad</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 col-lg-2">
+          <h6 class="text-uppercase small fw-bold mb-4 opacity-50" style="letter-spacing: 2px;">Explore</h6>
+          <a href="#" class="footer-link">Home</a>
+          <a href="#" class="footer-link">Partners</a>
+          <a href="#" class="footer-link">The Squad</a>
+          <a href="#" class="footer-link">Insights</a>
+        </div>
+
+        <div class="col-6 col-md-2 col-lg-3">
+          <h6 class="text-uppercase small fw-bold mb-4 opacity-50" style="letter-spacing: 2px;">Inquiries</h6>
+          <p class="location-title mb-1">Email</p>
+          <a href="mailto:hello@platform.ai" class="footer-link mb-3">info@genlabib.in</a>
+          <p class="location-title mb-1">Phone</p>
+          <a href="tel:+919994646733" class="footer-link">+91 99946 46733</a>
+        </div>
+      </div>
+
+      <div
+        class="mt-5 pt-5 border-top border-secondary d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="small text-secondary mb-0">&copy; 2026 AI GROWTH PLATFORM. MADE FOR THE NEXT GEN.</p>
+        <div class="d-flex gap-4 mt-3 mt-md-0">
+          <a href="#" class="footer-link m-0">PRIVACY POLICY</a>
+          <a href="#" class="footer-link m-0">TERMS OF SERVICE</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Scripts -->
-<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="js/script.js"></script>
 
+  <script>
+    $(window).on("scroll", function () {
+      const section = $("#benefits-scroll-section");
+      const scrollTop = $(window).scrollTop();
+      const sectionTop = section.offset().top;
+      const sectionHeight = section.height();
+      const progress = (scrollTop - sectionTop) / sectionHeight;
 
+      if (progress < 0 || progress > 1) return;
 
+      const steps = $(".benefits-image").length;
+      const index = Math.min(
+        steps - 1,
+        Math.floor(progress * steps)
+      );
+
+      $(".benefits-image, .benefits-content").removeClass("active");
+      $(".benefits-image").eq(index).addClass("active");
+      $(".benefits-content").eq(index).addClass("active");
+    });
+  </script>
+  <script>
+    function openMenu() {
+      document.getElementById('mobileMenu').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      document.getElementById('mobileMenu').classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const squadTrack = document.querySelector(".squad-track");
+    const squadCards = gsap.utils.toArray(".squad-card");
+
+    const trackWidth = squadCards.length * 330; // card width + gap
+    const viewportWidth = window.innerWidth;
+    const scrollDistance = trackWidth - viewportWidth;
+
+    gsap.to(squadTrack, {
+      x: -scrollDistance,
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#squad-section",
+        start: "top top",
+        end: "+=2500",
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1
+      }
+    });
+  </script>
+  <script>
+    $(window).on("scroll", function () {
+
+      const scrollTop = $(window).scrollTop();
+      const sectionTop = $("#aiSeq-scroll").offset().top;
+      const sectionHeight = $("#aiSeq-scroll").outerHeight();
+      const progress = (scrollTop - sectionTop) / sectionHeight;
+
+      $(".aiSeq-step").removeClass("active");
+      $("#aiSeq-card").removeClass("aiSeq-state-empty aiSeq-state-1 aiSeq-state-2 aiSeq-state-3");
+
+      if (progress < 0.25) {
+        $("#aiSeq-card").addClass("aiSeq-state-1");
+        $("#aiSeq-step-1").addClass("active");
+      }
+      else if (progress < 0.55) {
+        $("#aiSeq-card").addClass("aiSeq-state-2");
+        $("#aiSeq-step-2").addClass("active");
+      }
+      else if (progress < 0.85) {
+        $("#aiSeq-card").addClass("aiSeq-state-3");
+        $("#aiSeq-step-3").addClass("active");
+      }
+
+    });
+  </script>
+  <script>
+    (function () {
+      const blocks = document.querySelectorAll('.gt-content-block');
+      const images = document.querySelectorAll('.gt-reveal-img');
+
+      const options = {
+        root: document.querySelector('.gt-main-container'),
+        threshold: 0.5
+      };
+
+      if (window.innerWidth >= 768) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const targetId = entry.target.getAttribute('data-gt-trigger');
+              images.forEach(img => img.classList.remove('gt-active'));
+              const activeImg = document.getElementById(targetId);
+              if (activeImg) activeImg.classList.add('gt-active');
+            }
+          });
+        }, options);
+
+        blocks.forEach(block => observer.observe(block));
+      }
+    })();
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,117 @@
+.gloww {
+  height: 100vh;
+  background-image: url(../images/bg-logo.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gloww::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, #1c1c1c 1px, transparent 0);
+  background-size: 22px 22px;
+  opacity: 0.6;
+}
+
+.glow-stage {
+  position: relative;
+  transition: transform 0.7s ease;
+}
+
+/* SQUARE-SHAPED GLOW - Wraps around card edges */
+.glow-bg {
+  position: absolute;
+  inset: -120px;
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.6s ease, background 0.6s ease;
+  z-index: -1;
+}
+
+.glow-stage.active .glow-bg {
+  opacity: 1;
+}
+
+/* First click: Grey on bottom-right */
+.glow-stage[data-step="0"] .glow-bg {
+  background:
+    /* inner green glow on top-left */
+    linear-gradient(135deg,
+      rgba(190, 255, 0, 0.95) 0%,
+      rgba(190, 255, 0, 0.6) 40%,
+      transparent 60%),
+    /* grey glow on bottom-right */
+    linear-gradient(315deg,
+      rgba(180, 180, 180, 0.5) 0%,
+      rgba(120, 120, 120, 0.25) 40%,
+      transparent 60%);
+  filter: blur(70px);
+}
+
+/* Second click: Grey on top-right */
+.glow-stage[data-step="1"] .glow-bg {
+  background:
+    /* inner green glow on bottom-left */
+    linear-gradient(45deg,
+      rgba(190, 255, 0, 0.95) 0%,
+      rgba(190, 255, 0, 0.6) 40%,
+      transparent 60%),
+    /* grey glow on top-right */
+    linear-gradient(225deg,
+      rgba(180, 180, 180, 0.5) 0%,
+      rgba(120, 120, 120, 0.25) 40%,
+      transparent 60%);
+  filter: blur(70px);
+}
+
+/* Third click: Grey on top-left */
+.glow-stage[data-step="2"] .glow-bg {
+  background:
+    /* inner green glow on bottom-right */
+    linear-gradient(315deg,
+      rgba(190, 255, 0, 0.95) 0%,
+      rgba(190, 255, 0, 0.6) 40%,
+      transparent 60%),
+    /* grey glow on top-left */
+    linear-gradient(135deg,
+      rgba(180, 180, 180, 0.5) 0%,
+      rgba(120, 120, 120, 0.25) 40%,
+      transparent 60%);
+  filter: blur(70px);
+}
+
+.glow-stage.active .glow-bg {
+  opacity: 1;
+}
+
+.card-box {
+  width: 460px;
+  height: 270px;
+  background: #020202;
+  border-radius: 16px;
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.7),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  padding: 32px;
+}
+
+.card-box h1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.card-box p {
+  font-size: 1.05rem;
+  color: #cfcfcf;
+  line-height: 1.5;
+}
